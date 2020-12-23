@@ -1,0 +1,21 @@
+.parent {
+  color: blue;
+
+  & .element {
+    color: red;
+
+    & .second-child {
+      color: green;
+    }
+  }
+}
+
+// 1階層の子要素のみを選択
+// & > .element
+
+// それより下の子要素全体を選択
+// & .element
+
+// このような場合に適用
+// &.element
+// <div class="element second-child">second-child</div>
