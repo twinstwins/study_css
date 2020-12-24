@@ -19,4 +19,18 @@
   background-color: black;
   color: white;
 }
+
+.try .btn.filled {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.try .btn.filled:hover {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=try.css.map */
