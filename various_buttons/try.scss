@@ -53,5 +53,16 @@ $cBlack: black;
     }
   }
 
+  &.solid{
+    box-shadow: 2px 2px 0 0 black;
+    border-radius: 7px;
+    transition: all 0.5s;
+
+    &:hover{
+      box-shadow: none;
+      transform: translate(2px, 2px);
+    }
+  }
+
 
 }

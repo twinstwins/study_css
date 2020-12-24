@@ -56,4 +56,19 @@
   -webkit-box-shadow: 5px 5px 0 0 black;
           box-shadow: 5px 5px 0 0 black;
 }
+
+.try .btn.solid {
+  -webkit-box-shadow: 2px 2px 0 0 black;
+          box-shadow: 2px 2px 0 0 black;
+  border-radius: 7px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.try .btn.solid:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
 /*# sourceMappingURL=try.css.map */
