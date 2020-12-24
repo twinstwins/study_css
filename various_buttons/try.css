@@ -44,4 +44,16 @@
   color: white;
   letter-spacing: 3px;
 }
+
+.try .btn.shadow {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.try .btn.shadow:hover {
+  -webkit-transform: translate(-2.5px, -2.5px);
+          transform: translate(-2.5px, -2.5px);
+  -webkit-box-shadow: 5px 5px 0 0 black;
+          box-shadow: 5px 5px 0 0 black;
+}
 /*# sourceMappingURL=try.css.map */
