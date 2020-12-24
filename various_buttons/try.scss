@@ -33,4 +33,16 @@ $cBlack: black;
     }
   }
 
+  &.letter-spacing{
+    transition: all 0.5s;
+
+    &:hover{
+      background-color: $cBlack;
+      color: $cWhite;
+      letter-spacing: 3px;
+    }
+  }
+
+
+
 }
