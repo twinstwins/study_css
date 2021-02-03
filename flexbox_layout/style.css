@@ -4,3 +4,20 @@
 body {
     margin: 0;
 }
+
+/* ヘッダーブロック */
+header {
+    padding: 25px 15px;
+}
+
+/* コンテンツブロック */
+div {
+    background-color: #29abe2;
+    padding: 40px 15px;
+}
+
+/* フッターブロック */
+footer {
+    background-color: #6ac4eb;
+    padding: 25px 15px;
+}
