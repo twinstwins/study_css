@@ -3,11 +3,40 @@
 /* ページ全体の設定 */
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 /* ヘッダーブロック */
 header {
     padding: 25px 15px;
+    color: #29abe2;
+    font-size: 36px;
+    font-weight: bold;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* リンク */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+/* ナビゲーションメニュー */
+ul {
+    list-style-type: none;
+    padding: 0;
+    color:#666666;
+    font-size: 12px;
+    /* display: flex; */
+}
+
+li{
+    display: inline;
 }
 
 /* コンテンツブロック */
@@ -16,8 +45,42 @@ div {
     padding: 40px 15px;
 }
 
+/* 記事 */
+article {
+    background-color:white;
+    padding: 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+p{
+    line-height: 2;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+figure{
+    margin:0;
+}
+
+time{
+    color: #666666;
+    margin-bottom: 100px;
+    display: block;
+}
+
 /* フッターブロック */
 footer {
     background-color: #6ac4eb;
     padding: 25px 15px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
 }
