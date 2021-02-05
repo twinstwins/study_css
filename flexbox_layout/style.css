@@ -12,7 +12,7 @@ header {
     color: #29abe2;
     font-size: 36px;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -32,12 +32,13 @@ ul {
     padding: 0;
     color:#666666;
     font-size: 12px;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+}
+li:not(:last-child) {
+    margin-right: 20px;
 }
 
-li{
-    display: inline;
-}
 
 /* コンテンツブロック */
 div {
@@ -70,7 +71,7 @@ figure{
 
 time{
     color: #666666;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     display: block;
 }
 
