@@ -4,6 +4,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    text-size-adjust: none;
 }
 
 /* ヘッダーブロック */
@@ -27,7 +28,7 @@ a:hover{
 }
 
 /* ナビゲーションメニュー */
-ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     color:#666666;
@@ -35,13 +36,13 @@ ul {
     display: flex;
     justify-content: center;
 }
-li:not(:last-child) {
+nav li:not(:last-child) {
     margin-right: 20px;
 }
 
 
 /* コンテンツブロック */
-div {
+.contents {
     background-color: #29abe2;
     padding: 40px 15px;
 }
@@ -69,11 +70,72 @@ figure{
     margin:0;
 }
 
+/* 時刻表示 */
 time{
     color: #666666;
     margin-bottom: 10px;
     display: block;
 }
+
+/* サブメニュー */
+aside{
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+h2{
+    color: #29abe2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* サブメニュー: プロフィール */
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile figure{
+    text-align: center;
+}
+
+.profile p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* サブメニュー: 注目記事メニュー */
+.topics ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.topics a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topics figure{
+    width: 100px;
+    flex: none;
+}
+
+.topics img{
+    vertical-align: bottom;
+}
+
+.topics h3{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
 
 /* フッターブロック */
 footer {
@@ -84,4 +146,64 @@ footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 
+}
+
+
+
+/* ==== PC版の設定 ==== */
+@media (min-width: 600px) {
+
+/* PC版コンテナ */
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+}
+
+/* ====PC版の設定終了==== */
+
+@media(min-width: 1025px){
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .contents .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    article {
+        width: 68%;
+        box-sizing: border-box;
+    }
+
+    .sub{
+        width: 28%;
+    }
+
+    .profile{
+        margin-top: 0;
+    }
 }
